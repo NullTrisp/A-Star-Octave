@@ -13,8 +13,8 @@ img_size = size(binary);
 #Point locations
 startPointX = 1;
 startPointY = 1;
-global endPointX = 300;
-global endPointY = 200;
+global endPointX = 130;
+global endPointY = 40;
 
 rectangle_size = 1;
 
@@ -57,7 +57,7 @@ function nodes = getNearNodes(node)
   global binary;
   nodes = [];
   normalValue = 1;
-  diagonalValue = 1.4;
+  diagonalValue = sqrt(2);
 
   upX = node.x;
   upY = node.y - 1;
